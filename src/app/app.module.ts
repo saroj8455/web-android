@@ -13,6 +13,8 @@ import { CardCompComponent } from './components/card-comp/card-comp.component';
 import { HeadingComponent } from './components/heading/heading.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateWorkerComponent } from './pages/create-worker/create-worker.component';
+import { ListWorkersComponent } from './pages/list-workers/list-workers.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ErrorComponent,
     CardCompComponent,
     HeadingComponent,
-    NavbarComponent
+    NavbarComponent,
+    CreateWorkerComponent,
+    ListWorkersComponent
   ],
   imports: [
     BrowserModule,

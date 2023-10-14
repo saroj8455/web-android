@@ -25,12 +25,14 @@ export class NavbarComponent implements OnInit{
           icon: 'pi pi-fw pi-user',
           items: [
               {
-                  label: 'New',
-                  icon: 'pi pi-fw pi-user-plus'
+                  label: 'Create Worker',
+                  icon: 'pi pi-fw pi-user-plus',
+                  routerLink:"create-worker"
               },
               {
-                  label: 'Delete',
-                  icon: 'pi pi-fw pi-user-minus'
+                  label: 'List Workers',
+                  icon: 'pi pi-fw pi-user-minus',
+                  routerLink:"list-workers"
               },
           ]
       },
