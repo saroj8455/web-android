@@ -11,8 +11,11 @@ Change the below to properties in angular.json <br>
             npm i -D @capacitor/cli <br>
             npx cap init <br>
             (Ask for appname package name) <br>
-            npm i @capacitor/android @capacitor/ios
-
+            npm i @capacitor/android @capacitor/ios <br>
+## Generate module in Angular CLI
+`ng g m admin --routing` <br>
+`ng g m user --routing` <br>
+`ng g m public --routing` <br>
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
