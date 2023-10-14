@@ -8,13 +8,19 @@ import { PrimeModule } from './prime/prime.module';
 import { LandingComponent } from './components/landing/landing.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
+import { ErrorComponent } from './components/error/error.component';
+import { CardCompComponent } from './components/card-comp/card-comp.component';
+import { HeadingComponent } from './components/heading/heading.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    ErrorComponent,
+    CardCompComponent,
+    HeadingComponent
   ],
   imports: [
     BrowserModule,
