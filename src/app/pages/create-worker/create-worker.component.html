@@ -1,1 +1,82 @@
-<p>create-worker works!</p>
+<div class="card text-center">
+  <h1 class="text-primary">Create Worker</h1>
+</div>
+<div class="grid">
+  <div class="col-12 md:col-6 lg:col-6">
+    <div class="text-center p-3 border-round-sm">
+      <div class="worker-overlay flex align-items-center justify-content-center">
+        <img src="https://img.freepik.com/free-vector/set-construction-site-objects-workers_1308-109588.jpg?w=2000"
+          alt="" srcset="">
+
+      </div>
+    </div>
+  </div>
+  <div class="col-12 md:col-6 lg:col-6">
+    <div class="text-center p-3 border-round-sm">
+      <div class="worker-form">
+        <div class="card flex gap-4 flex-column">
+          <div class="field">
+            <span class="p-float-label p-input-icon-left flex">
+              <i class="pi pi-user"></i>
+              <input pInputText class="w-full" id="name" [(ngModel)]="worker.name" />
+              <label htmlFor="name">Worker Name</label>
+            </span>
+          </div>
+          <div class="field">
+            <span class="p-float-label p-input-icon-left flex">
+              <i class="pi pi-calendar"></i>
+              <input pInputText class="w-full" id="age" [(ngModel)]="worker.age" />
+              <label htmlFor="age">Age</label>
+            </span>
+          </div>
+          <div class="field">
+            <span class="p-float-label p-input-icon-left flex">
+              <i class="pi pi-home"></i>
+              <input pInputText class="w-full" id="address" [(ngModel)]="worker.address" />
+              <label htmlFor="address">Contact Address</label>
+            </span>
+          </div>
+          <div class="field">
+            <span class="p-float-label p-input-icon-left flex">
+              <i class="pi pi-camera"></i>
+              <input pInputText class="w-full" id="profile" [(ngModel)]="worker.profile" />
+              <label htmlFor="profile">Profile Photo</label>
+            </span>
+          </div>
+          <div class="field">
+            <span class="p-float-label p-input-icon-left flex">
+              <i class="pi pi-calendar-plus"></i>
+              <input pInputText class="w-full" id="work_slot" [(ngModel)]="worker.work_slot" />
+              <label htmlFor="work_slot">Work Slot</label>
+            </span>
+          </div>
+          <div class="field">
+            <span class="p-float-label">
+              <p-inputMask mask="9999-999-999" class="flex flex-column w-full" [(ngModel)]="worker.mobile"
+                id="mobile"></p-inputMask>
+              <label htmlFor="mobile">Mobile</label>
+            </span>
+          </div>
+          <div class="field flex flex-column gap-4">
+            <span class="p-float-label">
+              <p-multiSelect class="flex flex-column w-full" [options]="category" [filter]="true"
+                [(ngModel)]="selectedCategory" optionLabel="name"></p-multiSelect>
+              <label for="ms-cities">Work Type</label>
+            </span>
+            <span class="p-float-label">
+              <p-inputSwitch [(ngModel)]="worker.open_source"></p-inputSwitch>
+              <label for="ms-cities">Open Source</label>
+            </span>
+          </div>
+        </div>
+        <div class="card py-4 flex justify-content-center">
+          <span class="p-buttonset">
+            <button pButton pRipple label="Save" (click)="createWorker()" icon="pi pi-check"></button>
+            <button pButton pRipple label="Reset" (click)="resetWorker()" icon="pi pi-trash"></button>
+            <button pButton pRipple label="Cancel" icon="pi pi-times"></button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

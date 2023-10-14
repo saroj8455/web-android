@@ -45,6 +45,16 @@ app-root {
   min-height: 100dvh;
 }
 
+.worker-overlay img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: contain;
+}
+/* p-card {
+  margin: 1.6rem;
+} */
+
 /* Make the footer bottom of the page */
 footer {
   width: 100vw;
