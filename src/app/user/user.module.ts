@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { UserRoutingModule } from './user-routing.module';
 import { UserDashComponent } from './user-dash/user-dash.component';
 import { AboutComponent } from './about/about.component';
+import { PrimeModule } from '../prime/prime.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    PrimeModule,
   ]
 })
 export class UserModule { }

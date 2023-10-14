@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminDashComponent } from './admin-dash/admin-dash.component';
 import { AboutComponent } from './about/about.component';
+import { PrimeModule } from '../prime/prime.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    PrimeModule
   ]
 })
 export class AdminModule { }
