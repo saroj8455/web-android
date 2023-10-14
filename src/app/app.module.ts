@@ -11,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
 import { CardCompComponent } from './components/card-comp/card-comp.component';
 import { HeadingComponent } from './components/heading/heading.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HeadingComponent } from './components/heading/heading.component';
     HomeComponent,
     ErrorComponent,
     CardCompComponent,
-    HeadingComponent
+    HeadingComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

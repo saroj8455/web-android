@@ -18,7 +18,8 @@ body {
 a {
   text-decoration: none;
   line-height: 1.6;
-  color: #ccc;
+  /* color: #ccc; */
+  color: black;
 }
 
 img,svg {
@@ -32,8 +33,40 @@ p {
 }
 
 
-.app-container {
+.container {
   max-width: 80%;
   margin-inline: auto;
 }
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  /* footer move to bottom of the page */
+  min-height: 100dvh;
+}
+
+/* Make the footer bottom of the page */
+footer {
+  width: 100vw;
+  margin-top: auto;
+  height: 5rem;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
